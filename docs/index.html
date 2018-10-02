@@ -1,1 +1,26 @@
-oi
+<html>
+	<head><meta name="viewport" content="width=device-width, initial-scale=1.0"><script>
+		function f(){ document.getElementById("result").innerText = sss(); }
+		function sss(){
+			temps = [24,24,25,24,24,25,24,24,24,18];
+			temp = parseInt(Math.random()*temps.length);
+			epi = parseInt(Math.random()*temps[temp]);
+			temp++; epi++;
+			return "Temporada "+temp+"\nEpisódio "+epi;
+		}
+	</script><style>
+		.center{
+			text-align: center;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			padding-top: 3em;
+		}
+	</style></head><body>
+		<div class="center">
+			<p id="message">Aperte no botão abaixo para escolher um episódio aleatório de Friends</p>
+			<button onclick="f()">click</button>
+			<p id="result"></p>
+		</div>
+	</body>
+</html>

@@ -2,9 +2,9 @@
 	<head><meta name="viewport" content="width=device-width, initial-scale=1.0"><script>
 		function f(){ document.getElementById("result").innerText = sss(); }
 		function sss(){
-			temps = [24,24,25,24,24,25,24,24,24,18];
-			temp = parseInt(Math.random()*temps.length);
-			epi = parseInt(Math.random()*temps[temp]);
+			numEpis = [24,24,25,24,24,25,24,24,24,18];
+			temp = parseInt(Math.random()*numEpis.length);
+			epi = parseInt(Math.random()*numEpis[temp]);
 			temp++; epi++;
 			return "Temporada "+temp+"\nEpisódio "+epi;
 		}

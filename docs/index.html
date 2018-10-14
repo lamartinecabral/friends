@@ -1,5 +1,4 @@
-<html>
-	<head><meta name="viewport" content="width=device-width, initial-scale=1.0"><script>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><script>
 		function f(){ document.getElementById("result").innerText = sss(); }
 		function sss(){
 			numEpis = [24,24,25,24,24,25,24,24,24,18];
@@ -15,13 +14,19 @@
 			left: 50%;
 			transform: translateX(-50%);
 		}
-	</style></head><body style="margin: 0px; font-family: monospace;">
-		<img src="https://i.imgur.com/pWw0E3a.jpg" style="position: absolute; width: 100vw;" alt="">
+		body{
+			margin: 0px;
+			font-family: monospace;
+			background-image: url('https://i.imgur.com/pWw0E3a.jpg');
+			background-size: 100vw;
+			background-position: top;
+			background-repeat: no-repeat;
+		}
+	</style></head><body>
 		<div style="height: 45vw; max-height: 60vh;">.</div>
 		<div class="center" style="padding: 15px; background-color: #ffffffdd;">
 			<p id="message">Aperte no botão abaixo para escolher um episódio aleatório de Friends</p>
 			<button onclick="f()">click</button>
 			<p id="result"> </p>
 		</div>
-	</body>
-</html>
+</body></html>

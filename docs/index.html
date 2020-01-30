@@ -5,7 +5,7 @@
 			temp = ~~(Math.random()*numEpis.length);
 			epi = ~~(Math.random()*numEpis[temp]);
 			temp++; epi++;
-			document.getElementById("result").innerText = "Temporada ${temp}<br>Episódio ${epi}";
+			document.getElementById("result").innerText = "Temporada "+temp+"\nEpisódio "+epi;
 		}
 	</script>
 	<style>
@@ -33,7 +33,7 @@
 		}
 	</style>
 	<body>
-		<div class="_emptySpace" />
+		<div class="_emptySpace"></div>
 		<div class="_center _content">
 			<p id="message">
 				Aperte no botão abaixo para escolher um episódio aleatório de Friends
@@ -41,7 +41,7 @@
 			<button onclick="func()">
 				click
 			</button>
-			<p id="result" />
+			<p id="result"></p>
 		</div>
 	</body>
 </head></html>
